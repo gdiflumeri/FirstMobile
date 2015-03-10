@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.colsam.mobile.myfirst" versionCode="10" version="1.0">
+<name>NEW_PRODUCT_REQ</name>
+<description>New Product Request</description>
+<gap:plugin name="com.brodysoft.sqliteplugin" />
+<gap:platform name="android" />
+<gap:platform name="ios" />
+<preference name="phonegap-version" value="3.6.3" />
+<gap:plugin name="com.phonegap.plugin.statusbar" />
+<preference name="StatusBarOverlaysWebView" value="false" />
+<preference name="splash-screen-duration" value="10000" />
+<preference name="auto-hide-splash-screen" value="false" />
+<feature name="http://api.phonegap.com/1.0/file"/>
+<feature name="http://api.phonegap.com/1.0/media"/>
+<feature name="http://api.phonegap.com/1.0/network"/>
+<feature name="http://api.phonegap.com/1.0/device"/>
+<gap:plugin name="org.apache.cordova.battery-status" />
+<gap:plugin name="org.apache.cordova.camera" />
+<gap:plugin name="org.apache.cordova.media-capture" />
+<gap:plugin name="org.apache.cordova.contacts" />
+<gap:plugin name="org.apache.cordova.device" />
+<gap:plugin name="org.apache.cordova.device-motion" />
+<gap:plugin name="org.apache.cordova.device-orientation" />
+<gap:plugin name="org.apache.cordova.file" />
+<gap:plugin name="org.apache.cordova.file-transfer" />
+<gap:plugin name="org.apache.cordova.geolocation" />
+<gap:plugin name="org.apache.cordova.globalization" />
+<gap:plugin name="org.apache.cordova.inappbrowser" />
+<gap:plugin name="org.apache.cordova.media" />
+<gap:plugin name="org.apache.cordova.network-information" />
+<gap:plugin name="org.apache.cordova.dialogs" />
+<gap:plugin name="org.apache.cordova.splashscreen" />
+<gap:plugin name="org.apache.cordova.vibration" />
+<gap:plugin name="io.github.pwlin.cordova.plugins.fileopener2" />
+<access origin="*" subdomains="true"/>
+</widget>
