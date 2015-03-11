@@ -1,5 +1,3 @@
-/* SAP CVOM 4.0 © <2012-2014> SAP AG. All rights reserved. Build Version PI_bycheckin.1891 */
-/* Included Components: common,runtime,services,builder,annotation,annotationcontrol,chart,contextmenu,custombutton,feeding,frame,mapbuilder,filterbar,filterbar0,playcontrol,propertyeditor,switchbar,popover,dedicatedlegend */
 .viz-controls-common-analysisDraggable {
 
 }
@@ -2913,6 +2911,7 @@
 
 .viz-controls-propertyeditor-title-splitter {
     border-bottom: solid 1px #dddddd;
+    margin-bottom: 10px;
     width: calc(100% - 12px);
 }
 
@@ -2928,7 +2927,7 @@
     width: 176px;
 }
 .viz-controls-propertyeditor-series-type-container {
-    padding-top: 10px;
+    padding-top: 16px;
     width: 176px;
 }
 .viz-controls-propertyeditor-series-type-container .sapUiTfCombo{
@@ -4351,18 +4350,6 @@
   height: 1.4375rem;
 }
 
-.viz-controls-chartPopover .viz-controls-chartPopover-measures-item .sapMDLILabel{
-  width: 50%;
-  font-size: 0.875rem;
-  color: #000000;
-  padding-left : 1.25rem;
-}
-
-.viz-controls-chartPopover .viz-controls-chartPopover-measures-item .sapMDLIValue{
-  font-size: 0.875rem;
-  color: #000000;
-}
-
 .viz-controls-chartPopover .viz-controls-chartPopover-measures-item .sapMLIBContent{
   line-height: 1.4375rem;
 }
@@ -4372,12 +4359,6 @@
   padding: 0;
   border-bottom: none;
   line-height: 0rem;
-}
-
-.viz-controls-chartPopover .viz-controls-chartPopover-dimension-label{
-  font-weight: bold;
-  color: #000000;
-  line-height: 1.4375rem;
 }
 
 .viz-controls-chartPopover .viz-controls-chartPopover-dimension-marker{
@@ -4406,4 +4387,968 @@
 }
 .viz-controls-dedicatedLegend svg{
   margin: 0.4375rem 0.688rem 0.125rem 0.688rem;
+}.viz-controls-datapicker-area {
+    width: 100%;
+    height: 100%;
+    background:#fff;
+}
+.viz-controls-datapicker-main-layout {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+.viz-controls-datapicker-facet-type-toggle {
+    height: 100%;
+    float: left;
+}
+.viz-controls-datapicker-side-panel-container {
+    height: 100%;
+    float: right;
+}
+.viz-controls-datapicker-facet-analytic-split-pane {
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    overflow: hidden;
+}
+.viz-controls-datapicker-h1 {
+    font-size: 24px;
+    font-weight: normal;
+}
+.viz-controls-datapicker-h2 {
+    font-size: 14px;
+    font-weight: normal;
+}
+.viz-controls-datapicker-h3 {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
+.viz-controls-datapicker-h4 {
+    font-size: 12px;
+    font-weight: bold;
+}
+.viz-controls-datapicker-uppercase {
+    text-transform: uppercase;
+}
+.viz-controls-datapicker-text-overflow-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.viz-controls-datapicker-normal-text {
+    font-size: 12px;
+    font-weight: normal;
+}
+.viz-controls-datapicker-small-text {
+    color: #666;
+    font-size: 11px;
+    font-weight: bold;
+}
+.viz-controls-datapicker-allow-select {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+.viz-controls-datapicker-float-left {
+    float: left;
+}
+.viz-controls-datapicker-float-right {
+    float: right;
+}
+.viz-controls-datapicker-clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.viz-controls-datapicker-explorer.viz-controls-datapicker-viewmode .viz-controls-datapicker-facet-type-toggle, .viz-controls-datapicker-explorer.viz-controls-datapicker-viewmode .viz-controls-datapicker-side-panel-container, .viz-controls-datapicker-explorer.viz-controls-datapicker-viewmode .viz-controls-datapicker-facet-analytic-split-pane .viz-controls-datapicker-split-pane-first, .viz-controls-datapicker-explorer.viz-controls-datapicker-viewmode
+.viz-controls-datapicker-facet-analytic-split-pane .viz-controls-datapicker-split-pane-splitter, .viz-controls-datapicker-explorer.viz-controls-datapicker-viewmode .viz-controls-datapicker-facet-analytic-split-pane
+.viz-controls-datapicker-split-pane-splitter-hit-box {
+    display: none;
+}
+.viz-controls-datapicker-generated-title-bold {
+    font-weight: bold;
+    color: #404040;
+}
+.viz-controls-datapicker-generated-title-more {
+    font-weight: bold;
+    color: #c0c0c0;
+}
+.viz-controls-datapicker-tooltip-parent {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.viz-controls-datapicker-tooltip-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-right: 450px;
+}
+.viz-controls-datapicker-gripper-vertical-icon-10,.viz-controls-datapicker-gripper-vertical-active-icon-10,.viz-controls-datapicker-plus-icon-12,.viz-controls-datapicker-minus-icon-12,.viz-controls-datapicker-checkbox-inactive-icon-16,.viz-controls-datapicker-checkbox-active-icon-16,.viz-controls-datapicker-checkbox-selected-icon-16,.viz-controls-datapicker-checkbox-active-selected-icon-16,.viz-controls-datapicker-accept-icon-16,.viz-controls-datapicker-deny-icon-16,.viz-controls-datapicker-reload-icon-16,.viz-controls-datapicker-check-icon-16,.viz-controls-datapicker-check-transparent-icon-16,.viz-controls-datapicker-geo-icon-16,.viz-controls-datapicker-hierarchy-icon-16,.viz-controls-datapicker-geo-active-icon-16,.viz-controls-datapicker-hierarchy-active-icon-16,.viz-controls-datapicker-plus-icon-16,.viz-controls-datapicker-plus-active-icon-16,.viz-controls-datapicker-minus-icon-16,.viz-controls-datapicker-minus-active-icon-16,.viz-controls-datapicker-plus-disabled-icon-16,.viz-controls-datapicker-x-icon-16,.viz-controls-datapicker-x-active-icon-16,.viz-controls-datapicker-x-disabled-icon-16,.viz-controls-datapicker-plus-circle-icon-16,.viz-controls-datapicker-plus-circle-active-icon-16,.viz-controls-datapicker-dataset-icon-24,.viz-controls-datapicker-dataset-modification-icon-24,.viz-controls-datapicker-fullscreen-exit-icon-24,.viz-controls-datapicker-fullscreen-enter-icon-24,.viz-controls-datapicker-fullscreen-exit-active-icon-24,.viz-controls-datapicker-fullscreen-enter-active-icon-24,.viz-controls-datapicker-checker-icon-24,.viz-controls-datapicker-filter-icon-24,.viz-controls-datapicker-filter-active-icon-24,.viz-controls-datapicker-plus-icon-24,.viz-controls-datapicker-plus-active-icon-24,.viz-controls-datapicker-minus-icon-24,.viz-controls-datapicker-minus-active-icon-24,.viz-controls-datapicker-marquee-icon-24,.viz-controls-datapicker-marquee-active-icon-24,.viz-controls-datapicker-reset-icon-24,.viz-controls-datapicker-reset-active-icon-24,.viz-controls-datapicker-accept-icon-32,.viz-controls-datapicker-deny-icon-32,.viz-controls-datapicker-delete-icon-32,.viz-controls-datapicker-reload-icon-32,.viz-controls-datapicker-vertical-layout-icon-32,.viz-controls-datapicker-vertical-layout-active-icon-32,.viz-controls-datapicker-horizontal-layout-icon-32,.viz-controls-datapicker-horizontal-layout-active-icon-32,.viz-controls-datapicker-text-icon-32,.viz-controls-datapicker-text-active-icon-32,.viz-controls-datapicker-bar-icon-32,.viz-controls-datapicker-bar-active-icon-32,.viz-controls-datapicker-dot-icon-32,.viz-controls-datapicker-dot-active-icon-32,.viz-controls-datapicker-line-icon-32,.viz-controls-datapicker-line-active-icon-32,.viz-controls-datapicker-tile-icon-32,.viz-controls-datapicker-tile-active-icon-32,.viz-controls-datapicker-geo-icon-32,.viz-controls-datapicker-geo-active-icon-32,.viz-controls-datapicker-spread-active-icon-32,.viz-controls-datapicker-spread-icon-32,.viz-controls-datapicker-group-active-icon-32,.viz-controls-datapicker-group-icon-32,.viz-controls-datapicker-stacked-active-icon-32,.viz-controls-datapicker-stacked-icon-32,.viz-controls-datapicker-crosstab-icon-32,.viz-controls-datapicker-crosstab-active-icon-32,.viz-controls-datapicker-bar-chart-icon-48,.viz-controls-datapicker-dot-plot-chart-icon-48,.viz-controls-datapicker-strip-plot-chart-icon-48,.viz-controls-datapicker-heat-map-chart-icon-48,.viz-controls-datapicker-size-comparison-chart-icon-48,.viz-controls-datapicker-geo-bubble-chart-icon-48,.viz-controls-datapicker-tag-cloud-chart-icon-48,.viz-controls-datapicker-table-icon-48,.viz-controls-datapicker-stacked-bar-chart-icon-48,.viz-controls-datapicker-pie-chart-icon-48,.viz-controls-datapicker-tree-map-icon-48,.viz-controls-datapicker-line-chart-icon-48,.viz-controls-datapicker-area-chart-icon-48,.viz-controls-datapicker-scatter-plot-chart-icon-48,.viz-controls-datapicker-bubble-plot-chart-icon-48,.viz-controls-datapicker-custom-chart-icon-48{background-image:url(../common/assets/UVB_VxtabSprite.png);background-color:transparent;background-repeat:no-repeat;}@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 3/2),only screen and (min-device-pixel-ratio: 1.5){.viz-controls-datapicker-gripper-vertical-icon-10,.viz-controls-datapicker-gripper-vertical-active-icon-10,.viz-controls-datapicker-plus-icon-12,.viz-controls-datapicker-minus-icon-12,.viz-controls-datapicker-checkbox-inactive-icon-16,.viz-controls-datapicker-checkbox-active-icon-16,.viz-controls-datapicker-checkbox-selected-icon-16,.viz-controls-datapicker-checkbox-active-selected-icon-16,.viz-controls-datapicker-accept-icon-16,.viz-controls-datapicker-deny-icon-16,.viz-controls-datapicker-reload-icon-16,.viz-controls-datapicker-check-icon-16,.viz-controls-datapicker-check-transparent-icon-16,.viz-controls-datapicker-geo-icon-16,.viz-controls-datapicker-hierarchy-icon-16,.viz-controls-datapicker-geo-active-icon-16,.viz-controls-datapicker-hierarchy-active-icon-16,.viz-controls-datapicker-plus-icon-16,.viz-controls-datapicker-plus-active-icon-16,.viz-controls-datapicker-minus-icon-16,.viz-controls-datapicker-minus-active-icon-16,.viz-controls-datapicker-plus-disabled-icon-16,.viz-controls-datapicker-x-icon-16,.viz-controls-datapicker-x-active-icon-16,.viz-controls-datapicker-x-disabled-icon-16,.viz-controls-datapicker-plus-circle-icon-16,.viz-controls-datapicker-plus-circle-active-icon-16,.viz-controls-datapicker-dataset-icon-24,.viz-controls-datapicker-dataset-modification-icon-24,.viz-controls-datapicker-fullscreen-exit-icon-24,.viz-controls-datapicker-fullscreen-enter-icon-24,.viz-controls-datapicker-fullscreen-exit-active-icon-24,.viz-controls-datapicker-fullscreen-enter-active-icon-24,.viz-controls-datapicker-checker-icon-24,.viz-controls-datapicker-filter-icon-24,.viz-controls-datapicker-filter-active-icon-24,.viz-controls-datapicker-plus-icon-24,.viz-controls-datapicker-plus-active-icon-24,.viz-controls-datapicker-minus-icon-24,.viz-controls-datapicker-minus-active-icon-24,.viz-controls-datapicker-marquee-icon-24,.viz-controls-datapicker-marquee-active-icon-24,.viz-controls-datapicker-reset-icon-24,.viz-controls-datapicker-reset-active-icon-24,.viz-controls-datapicker-accept-icon-32,.viz-controls-datapicker-deny-icon-32,.viz-controls-datapicker-delete-icon-32,.viz-controls-datapicker-reload-icon-32,.viz-controls-datapicker-vertical-layout-icon-32,.viz-controls-datapicker-vertical-layout-active-icon-32,.viz-controls-datapicker-horizontal-layout-icon-32,.viz-controls-datapicker-horizontal-layout-active-icon-32,.viz-controls-datapicker-text-icon-32,.viz-controls-datapicker-text-active-icon-32,.viz-controls-datapicker-bar-icon-32,.viz-controls-datapicker-bar-active-icon-32,.viz-controls-datapicker-dot-icon-32,.viz-controls-datapicker-dot-active-icon-32,.viz-controls-datapicker-line-icon-32,.viz-controls-datapicker-line-active-icon-32,.viz-controls-datapicker-tile-icon-32,.viz-controls-datapicker-tile-active-icon-32,.viz-controls-datapicker-geo-icon-32,.viz-controls-datapicker-geo-active-icon-
+32,.viz-controls-datapicker-spread-active-icon-32,.viz-controls-datapicker-spread-icon-32,.viz-controls-datapicker-group-active-icon-32,.viz-controls-datapicker-group-icon-32,.viz-controls-datapicker-stacked-active-icon-32,.viz-controls-datapicker-stacked-icon-32,.viz-controls-datapicker-crosstab-icon-32,.viz-controls-datapicker-crosstab-active-icon-32,.viz-controls-datapicker-bar-chart-icon-48,.viz-controls-datapicker-dot-plot-chart-icon-48,.viz-controls-datapicker-strip-plot-chart-icon-48,.viz-controls-datapicker-heat-map-chart-icon-48,.viz-controls-datapicker-size-comparison-chart-icon-48,.viz-controls-datapicker-geo-bubble-chart-icon-48,.viz-controls-datapicker-tag-cloud-chart-icon-48,.viz-controls-datapicker-table-icon-48,.viz-controls-datapicker-stacked-bar-chart-icon-48,.viz-controls-datapicker-pie-chart-icon-48,.viz-controls-datapicker-tree-map-icon-48,.viz-controls-datapicker-line-chart-icon-48,.viz-controls-datapicker-area-chart-icon-48,.viz-controls-datapicker-scatter-plot-chart-icon-48,.viz-controls-datapicker-bubble-plot-chart-icon-48,.viz-controls-datapicker-custom-chart-icon-48{background-image:url(../common/assets/havana-vxtab-sprite-2x.png);background-color:transparent;background-repeat:no-repeat;-moz-background-size:146px 1580px;-ie-background-size:146px 1580px;-o-background-size:146px 1580px;-webkit-background-size:146px 1580px;background-size:146px 1580px;}}
+.viz-controls-datapicker-gripper-vertical-icon-10,.viz-controls-datapicker-gripper-vertical-active-icon-10 {
+    width:10px;height:10px;
+}
+.viz-controls-datapicker-plus-icon-12, .viz-controls-datapicker-minus-icon-12 {
+    width: 12px;
+    height: 12px;
+}
+.viz-controls-datapicker-checkbox-inactive-icon-16, .viz-controls-datapicker-checkbox-active-icon-16, .viz-controls-datapicker-checkbox-selected-icon-16, .viz-controls-datapicker-checkbox-active-selected-icon-16, .viz-controls-datapicker-accept-icon-16, .viz-controls-datapicker-deny-icon-16, .viz-controls-datapicker-reload-icon-16, .viz-controls-datapicker-check-icon-16, .viz-controls-datapicker-check-transparent-icon-16, .viz-controls-datapicker-geo-icon-16, .viz-controls-datapicker-hierarchy-icon-16, .viz-controls-datapicker-geo-active-icon-16, .viz-controls-datapicker-hierarchy-active-icon-16, .viz-controls-datapicker-plus-icon-16, .viz-controls-datapicker-plus-active-icon-16, .viz-controls-datapicker-minus-icon-16, .viz-controls-datapicker-minus-active-icon-16, .viz-controls-datapicker-plus-disabled-icon-16, .viz-controls-datapicker-x-icon-16, .viz-controls-datapicker-x-active-icon-16, .viz-controls-datapicker-x-disabled-icon-16, .viz-controls-datapicker-plus-circle-icon-16, .viz-controls-datapicker-plus-circle-active-icon-16 {
+    width: 16px;
+    height: 16px;
+}
+.viz-controls-datapicker-dataset-icon-24, .viz-controls-datapicker-dataset-modification-icon-24, .viz-controls-datapicker-fullscreen-exit-icon-24, .viz-controls-datapicker-fullscreen-enter-icon-24, .viz-controls-datapicker-fullscreen-exit-active-icon-24, .viz-controls-datapicker-fullscreen-enter-active-icon-24, .viz-controls-datapicker-checker-icon-24, .viz-controls-datapicker-filter-icon-24, .viz-controls-datapicker-filter-active-icon-24, .viz-controls-datapicker-plus-icon-24, .viz-controls-datapicker-plus-active-icon-24, .viz-controls-datapicker-minus-icon-24, .viz-controls-datapicker-minus-active-icon-24, .viz-controls-datapicker-marquee-icon-24, .viz-controls-datapicker-marquee-active-icon-24, .viz-controls-datapicker-reset-icon-24, .viz-controls-datapicker-reset-active-icon-24 {
+    width: 24px;
+    height: 24px;
+}
+.viz-controls-datapicker-accept-icon-32, .viz-controls-datapicker-deny-icon-32, .viz-controls-datapicker-delete-icon-32, .viz-controls-datapicker-reload-icon-32, .viz-controls-datapicker-vertical-layout-icon-32, .viz-controls-datapicker-vertical-layout-active-icon-32, .viz-controls-datapicker-horizontal-layout-icon-32, .viz-controls-datapicker-horizontal-layout-active-icon-32, .viz-controls-datapicker-text-icon-32, .viz-controls-datapicker-text-active-icon-32, .viz-controls-datapicker-bar-icon-32, .viz-controls-datapicker-bar-active-icon-32, .viz-controls-datapicker-dot-icon-32, .viz-controls-datapicker-dot-active-icon-32, .viz-controls-datapicker-line-icon-32, .viz-controls-datapicker-line-active-icon-32, .viz-controls-datapicker-tile-icon-32, .viz-controls-datapicker-tile-active-icon-32, .viz-controls-datapicker-geo-icon-32, .viz-controls-datapicker-geo-active-icon-32, .viz-controls-datapicker-spread-active-icon-32, .viz-controls-datapicker-spread-icon-32, .viz-controls-datapicker-group-active-icon-32, .viz-controls-datapicker-group-icon-32, .viz-controls-datapicker-stacked-active-icon-32, .viz-controls-datapicker-stacked-icon-32, .viz-controls-datapicker-crosstab-icon-32, .viz-controls-datapicker-crosstab-active-icon-32 {
+    width: 32px;
+    height: 32px;
+}
+.viz-controls-datapicker-bar-chart-icon-48, .viz-controls-datapicker-dot-plot-chart-icon-48, .viz-controls-datapicker-strip-plot-chart-icon-48, .viz-controls-datapicker-heat-map-chart-icon-48, .viz-controls-datapicker-size-comparison-chart-icon-48, .viz-controls-datapicker-geo-bubble-chart-icon-48, .viz-controls-datapicker-tag-cloud-chart-icon-48, .viz-controls-datapicker-table-icon-48, .viz-controls-datapicker-stacked-bar-chart-icon-48, .viz-controls-datapicker-pie-chart-icon-48, .viz-controls-datapicker-tree-map-icon-48, .viz-controls-datapicker-line-chart-icon-48, .viz-controls-datapicker-area-chart-icon-48, .viz-controls-datapicker-scatter-plot-chart-icon-48, .viz-controls-datapicker-bubble-plot-chart-icon-48, .viz-controls-datapicker-custom-chart-icon-48 {
+    width: 48px;
+    height: 48px;
+}
+.viz-controls-datapicker-dataset-icon-24 {
+    background-position: 0px 0px;
+}
+.viz-controls-datapicker-core-x-icon-8,.viz-controls-datapicker-core-x-active-icon-8 {
+    width:8px;height:8px;
+}
+.viz-controls-datapicker-core-checkmark-icon-10, .viz-controls-datapicker-core-checkmark-active-icon-10, .viz-controls-datapicker-core-checkmark-focus-icon-10 {
+    width: 10px;
+    height: 10px;
+}
+.viz-controls-datapicker-core-search-icon-16, .viz-controls-datapicker-core-caret-right-icon-16 {
+    width: 16px;
+    height: 16px;
+}
+.viz-controls-datapicker-core-search-icon-16 {
+    background-position: 0px -157px;
+}
+.viz-controls-datapicker-core-caret-right-icon-16 {
+    background-position: -119px -362px;
+}
+.viz-controls-datapicker-scrollable-x, .viz-controls-datapicker-scrollable-y, .viz-controls-datapicker-scrollable-hover-x, .viz-controls-datapicker-scrollable-hover-y {
+    overflow: hidden;
+}
+.viz-controls-datapicker-scrollable-x, .viz-controls-datapicker-scrollable-hover-x.viz-controls-datapicker-hover, .viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-scrollable-hover-x:hover {
+    overflow-x: auto !important;
+}
+.viz-controls-datapicker-scrollable-y, .viz-controls-datapicker-scrollable-hover-y.viz-controls-datapicker-hover, .viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-scrollable-hover-y:hover {
+    overflow-y: auto !important;
+}
+
+.viz-controls-datapicker-scrollable {
+    scrollbar-arrow-color: #FFF;
+    scrollbar-face-color: #bfbfbf;
+    scrollbar-track-color: #FFF;
+    scrollbar-base-color: #FFF;
+    scrollbar-darkshadow-color: #FFF;
+    scrollbar-shadow-color: #FFF;
+    -webkit-overflow-scrolling: touch;
+}
+.viz-controls-datapicker-scrollable-scrollContainerRotateResizeFix .viz-controls-datapicker-scrollable {
+    -webkit-overflow-scrolling: auto;
+}
+.viz-controls-datapicker-scrollable-scrollContainerRotateResizeFix .viz-controls-datapicker-scrollable::-webkit-scrollbar {
+    display: none;
+}
+.viz-controls-datapicker-scrollwindow, .viz-controls-datapicker-scrollwindow-sizer, .viz-controls-datapicker-scrollwindow-content {
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.viz-controls-datapicker-scrollwindow-content {
+    position: absolute;
+}
+.viz-controls-datapicker-scrollwindow-truncatedmsg {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    font-style: italic;
+    font-size: 70%;
+    text-align: center;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-button:hover {
+    border: 1px solid #BFBFBF;
+    color: #666;
+    -webkit-box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 0px 1px rgba(0, 0, 0, 0.1);
+    background: #f2f2f2;
+    background: -moz-linear-gradient(top, #f2f2f2 8%, #fafafa 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #f2f2f2), color-stop(100%, #fafafa));
+    background: -webkit-linear-gradient(top, #f2f2f2 8%, #fafafa 100%);
+    background: -o-linear-gradient(top, #f2f2f2 8%, #fafafa 100%);
+    background: -ms-linear-gradient(top, #f2f2f2 8%, #fafafa 100%);
+    background: linear-gradient(to bottom, #f2f2f2 8%, #fafafa 100%);
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-button-cancel:hover {
+    color: #007cc0;
+}
+.viz-controls-datapicker-core-shell {
+}
+.viz-controls-datapicker-core-shell select, .viz-controls-datapicker-core-shell button, .viz-controls-datapicker-core-shell input {
+    color: #333;
+    font: inherit;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.viz-controls-datapicker-core-shell select::-moz-focus-inner, .viz-controls-datapicker-core-shell button::-moz-focus-inner, .viz-controls-datapicker-core-shell input::-moz-focus-inner {
+    border: 0;
+}
+.viz-controls-datapicker-core-shell select:focus, .viz-controls-datapicker-core-shell button:focus, .viz-controls-datapicker-core-shell input:focus {
+    outline: 0;
+}
+.viz-controls-datapicker-core-shell .viz-controls-datapicker-button, .viz-controls-datapicker-core-shell button, .viz-controls-datapicker-core-shell input[type=button] {
+    padding: 1px 6px;
+}
+.viz-controls-datapicker-core-shell input:not([type]), .viz-controls-datapicker-core-shell input[type="color"], .viz-controls-datapicker-core-shell input[type="email"], .viz-controls-datapicker-core-shell input[type="number"], .viz-controls-datapicker-core-shell input[type="password"], .viz-controls-datapicker-core-shell input[type="tel"], .viz-controls-datapicker-core-shell input[type="url"], .viz-controls-datapicker-core-shell input[type="text"], .viz-controls-datapicker-core-shell textarea, .viz-controls-datapicker-core-shell select {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 0;
+}
+.viz-controls-datapicker-core-shell textarea {
+    resize: none;
+    outline: none;
+    overflow-y: auto;
+}
+.viz-controls-datapicker-core-shell .viz-controls-datapicker-button {
+    border-radius: 3px;
+    border: 1px solid #BFBFBF;
+    color: #666;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 80%, #f2f2f2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #ffffff), color-stop(100%, #f2f2f2));
+    background: -webkit-linear-gradient(top, #ffffff 80%, #f2f2f2 100%);
+    background: -o-linear-gradient(top, #ffffff 80%, #f2f2f2 100%);
+    background: -ms-linear-gradient(top, #ffffff 80%, #f2f2f2 100%);
+    background: linear-gradient(to bottom, #ffffff 80%, #f2f2f2 100%);
+}
+.viz-controls-datapicker-core-shell .viz-controls-datapicker-button[disabled], .viz-controls-datapicker-core-shell .viz-controls-datapicker-button.viz-controls-datapicker-disabled, .viz-controls-datapicker-core-shell .viz-controls-datapicker-button:active {
+    background: #f2f2f2;
+    background: -moz-linear-gradient(top, #f2f2f2 8%, #fafafa 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #f2f2f2), color-stop(100%, #fafafa));
+    background: -webkit-linear-gradient(top, #f2f2f2 8%, #fafafa 100%);
+    background: -o-linear-gradient(top, #f2f2f2 8%, #fafafa 100%);
+    background: -ms-linear-gradient(top, #f2f2f2 8%, #fafafa 100%);
+    background: linear-gradient(to bottom, #f2f2f2 8%, #fafafa 100%);
+}
+.viz-controls-datapicker-core-shell .viz-controls-datapicker-button.viz-controls-datapicker-depressed {
+    border: 1px solid #008fd3;
+    color: #FFF;
+    -webkit-box-shadow: inset 0px 0px 2px 2px rgba(0, 143, 211, 0.15);
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 143, 211, 0.15);
+    background: #3ab0e9;
+    background: -moz-linear-gradient(top, #3ab0e9 8%, #74b6e2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #3ab0e9), color-stop(100%, #74b6e2));
+    background: -webkit-linear-gradient(top, #3ab0e9 8%, #74b6e2 100%);
+    background: -o-linear-gradient(top, #3ab0e9 8%, #74b6e2 100%);
+    background: -ms-linear-gradient(top, #3ab0e9 8%, #74b6e2 100%);
+    background: linear-gradient(to bottom, #3ab0e9 8%, #74b6e2 100%);
+}
+.viz-controls-datapicker-core-shell .viz-controls-datapicker-button:active {
+    border: 1px solid #BFBFBF;
+    color: #666;
+    -webkit-box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
+}
+.viz-controls-datapicker-core-shell .viz-controls-datapicker-button[disabled], .viz-controls-datapicker-core-shell .viz-controls-datapicker-button.viz-controls-datapicker-disabled {
+    border: 1px solid #DDDDDD;
+    color: #BFBFBF;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: default;
+}
+.viz-controls-datapicker-core-shell .viz-controls-datapicker-button-cancel {
+    border: none;
+    cursor: pointer;
+    color: rgba(0, 124, 192, 0.6);
+    background-color: transparent;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-search-box {
+    margin: 0 8px;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-search-box .viz-controls-datapicker-search-box-input {
+    font-size: 14px;
+    height: 34px;
+}
+.viz-controls-datapicker-search-box {
+    position: relative;
+    margin: 0 4px;
+}
+.viz-controls-datapicker-search-box .viz-controls-datapicker-search-box-input {
+    width: 182px;
+    padding: 3px 24px 3px 3px;
+    border: 1px solid #CCCCCC;
+    -webkit-appearance: none;
+}
+.viz-controls-datapicker-search-box .viz-controls-datapicker-search-box-input:hover {
+    border-color:#007CC0;
+}
+.viz-controls-datapicker-search-box .viz-controls-datapicker-search-box-clear-button {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet .viz-controls-datapicker-facet-menu-button:hover .viz-controls-datapicker-core-cog-icon-16, .viz-controls-datapicker-facet .viz-controls-datapicker-facet-menu-button:active .viz-controls-datapicker-core-cog-icon-16, .viz-controls-datapicker-facet .viz-controls-datapicker-facet-menu-button.viz-controls-datapicker-menu-open .viz-controls-datapicker-core-cog-icon-16 {
+    background-position: -34px -303px;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet .viz-controls-datapicker-facet-menu-button:hover .viz-controls-datapicker-core-cog-icon-24, .viz-controls-datapicker-facet .viz-controls-datapicker-facet-menu-button:active .viz-controls-datapicker-core-cog-icon-24, .viz-controls-datapicker-facet .viz-controls-datapicker-facet-menu-button.viz-controls-datapicker-menu-open .viz-controls-datapicker-core-cog-icon-24 {
+    background-position: -50px -320px;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-search-button:hover .viz-controls-datapicker-core-search-icon-16, .viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-core-search-icon-16:hover, .viz-controls-datapicker-show-search .viz-controls-datapicker-core-search-icon-16, .viz-controls-datapicker-facet-search-button:active .viz-controls-datapicker-core-search-icon-16, .viz-controls-datapicker-core-search-icon-16:active {
+    background-position: -17px -157px;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-core-search-icon-24:hover, .viz-controls-datapicker-show-search .viz-controls-datapicker-core-search-icon-24, .viz-controls-datapicker-facet-search-button:active .viz-controls-datapicker-core-search-icon-24, .viz-controls-datapicker-core-search-icon-24:active {
+    background-position: -25px -892px;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-header-back-button:not(.viz-controls-datapicker-no-hover) .viz-controls-datapicker-core-caret-left-icon-16:hover, .viz-controls-datapicker-facet-header-back-button:not(.viz-controls-datapicker-no-hover) .viz-controls-datapicker-core-caret-left-icon-16:active {
+    background-position: -51px -362px;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-member-drill-button:not(.viz-controls-datapicker-no-hover) .viz-controls-datapicker-core-caret-right-icon-16:hover, .viz-controls-datapicker-facet-member-drill-button:not(.viz-controls-datapicker-no-hover) .viz-controls-datapicker-core-caret-right-icon-16:active {
+    background-position: -102px -362px;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-member-hierarchy-indicator .viz-controls-datapicker-hierarchy-icon-16:hover, .viz-controls-datapicker-facet-member-hierarchy-indicator .viz-controls-datapicker-hierarchy-icon-16:active {
+    background-position: -51px -1101px;
+}
+.viz-controls-datapicker-hierarchy-icon-16
+{
+    background-position: 0px -1632px;
+}
+.viz-controls-datapicker-hierarchy-active-icon-16
+{
+    background-position: -17px -1632px;
+}
+.viz-controls-datapicker-core-support-mouse, .viz-controls-datapicker-facet-member-expand-button, .viz-controls-datapicker-plus-icon-16:hover, .viz-controls-datapicker-facet-member-expand-button .viz-controls-datapicker-plus-icon-16:active {
+    background-position: 0px -1118px;
+}
+.viz-controls-datapicker-plus-icon-16
+{
+    background-position: 0px -1118px;
+}
+.viz-controls-datapicker-minus-active-icon-16
+{
+    background-position: -51px -1118px;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-menu-button:hover {
+    background-color: #3ea1d7;
+    border-color: #008fd3;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-token-draggable.viz-controls-datapicker-facet-token:hover {
+    cursor: move;
+    background: #858585;
+    background: rgba(102, 102, 102, 0.8);
+    border: 1px solid #555555;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-token-draggable.viz-controls-datapicker-facet-token:hover .viz-controls-datapicker-facet-token-label {
+    color: #FFFFFF;
+    cursor: move;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-member-expand-button .viz-controls-datapicker-plus-icon-16:hover, .viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-member-hierarchy-indicator .viz-controls-datapicker-hierarchy-icon-16:hover, .viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-member-drill-button:not(.viz-controls-datapicker-no-hover) .viz-controls-datapicker-core-caret-right-icon-16:hover, .viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-header-back-button:not(.viz-controls-datapicker-no-hover) .viz-controls-datapicker-core-caret-left-icon-16:hover {
+    background-color: #3ea1d7;
+    border-color: #008fd3;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-member-highlighting:hover {
+    background-color: #3ea1d7;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-member-highlighting:hover label, .viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-member-highlighting:hover span {
+    color: #FFFFFF;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-member-highlighting:hover span.viz-controls-datapicker-facet-bubble {
+    color: #666666;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-show-secondary:not(.viz-controls-datapicker-show-search):hover .viz-controls-datapicker-facet-members {
+    z-index: 20;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-show-secondary:not(.viz-controls-datapicker-show-search):hover .viz-controls-datapicker-facet-members.viz-controls-datapicker-facet-members-secondary {
+    z-index: 10;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-member {
+    height: 34px;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-header {
+    height: 36px;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-header .viz-controls-datapicker-facet-header-sub-title {
+    line-height: 36px;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-header .viz-controls-datapicker-facet-bubble {
+    top: 11px;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-members {
+    top: 36px;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-show-search > .viz-controls-datapicker-facet-members {
+    top: 70px;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-token {
+    height: 30px;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-token-label {
+    line-height: 30px;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-member-value {
+    line-height: 32px;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-member .viz-controls-datapicker-facet-bubble {
+    top: 9px;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-member-item {
+    height: 32px;
+}
+.viz-controls-datapicker-metadata-bar {
+    height: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #FFF;
+    border-bottom: solid 1px #DDD;
+}
+.viz-controls-datapicker-metadata-bar .viz-controls-datapicker-view-name {
+    display: block;
+    padding: 10px 0;
+    cursor:default;
+}
+.viz-controls-datapicker-metadata-bar .viz-controls-datapicker-dataset-icon-24 {
+    float: left;
+    margin: 6px 6px;
+}
+.viz-controls-datapicker-facet-container {
+    position: absolute;
+    top: 37px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.viz-controls-datapicker-metadata-bar+ .viz-controls-datapicker-facet-container {
+    top: 37px;
+}
+.viz-controls-datapicker-facet-area {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.viz-controls-datapicker-facet-area .viz-controls-datapicker-facet {
+    width: 240px;
+    display: inline-block;
+    vertical-align: top;
+}
+.viz-controls-datapicker-facet-area-vertical .viz-controls-datapicker-facet {
+    width: auto;
+    display: block;
+}
+.viz-controls-datapicker-facet-area-vertical .viz-controls-datapicker-facet:first-child {
+    height: 34%;
+}
+.viz-controls-datapicker-facet-area-vertical .viz-controls-datapicker-facet:last-child {
+    border-top: 1px solid #DDDDDD;
+    height: 66%;
+}
+.viz-controls-datapicker-facet-area-vertical .viz-controls-datapicker-facet:only-child {
+    border: 0;
+    height: 100%;
+}
+.viz-controls-datapicker-facet-area-hide-item-menus .viz-controls-datapicker-facet-member .viz-controls-datapicker-facet-menu-button {
+    display: none;
+}
+.viz-controls-datapicker-facet-area-horizontal .viz-controls-datapicker-facet {
+    border-right: 1px solid #DDDDDD;
+}
+.viz-controls-datapicker-facet-area-horizontal .viz-controls-datapicker-facet-area-content {
+    border-bottom: 1px solid #DDDDDD;
+}
+.viz-controls-datapicker-facet-area-content {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.viz-controls-datapicker-facet {
+    position: relative;
+    display: block;
+    height: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.viz-controls-datapicker-facet .viz-controls-datapicker-search-box {
+    display: none;
+}
+.viz-controls-datapicker-facet.viz-controls-datapicker-show-search .viz-controls-datapicker-search-box {
+    display: block;
+}
+.viz-controls-datapicker-facet:not(.viz-controls-datapicker-facet-show-sub-title) .viz-controls-datapicker-facet-member-highlighting .viz-controls-datapicker-facet-token-label, .viz-controls-datapicker-facet.viz-controls-datapicker-facet-show-secondary .viz-controls-datapicker-facet-token-label {
+    max-width: 100%;
+}
+.viz-controls-datapicker-facet .viz-controls-datapicker-facet-token-label {
+    max-width: 120px;
+}
+.viz-controls-datapicker-facet-area.viz-controls-datapicker-selectable .viz-controls-datapicker-facet {
+    color: #666666;
+}
+.viz-controls-datapicker-facet-area.viz-controls-datapicker-selectable .viz-controls-datapicker-facet.viz-controls-datapicker-selected {
+    color: #333333;
+}
+.viz-controls-datapicker-facet-area.viz-controls-datapicker-selectable .viz-controls-datapicker-facet.viz-controls-datapicker-selected::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0px 0px 0px 1px #008fd3;
+    pointer-events: none;
+}
+.viz-controls-datapicker-facet-search-button {
+    margin: 2px;
+    padding: 2px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+    -moz-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+    -ms-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+    -o-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+    transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+}
+.viz-controls-datapicker-core-support-vi-embedded .viz-controls-datapicker-facet-search-button {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-search-button, .viz-controls-datapicker-show-search .viz-controls-datapicker-facet-search-button, .viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet:hover .viz-controls-datapicker-facet-search-button {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-search-button:hover, .viz-controls-datapicker-facet-search-button:active, .viz-controls-datapicker-show-search .viz-controls-datapicker-facet-search-button {
+    background-color: #3ea1d7;
+    border-color: #008fd3;
+}
+.viz-controls-datapicker-facet-menu-button {
+    margin: 2px;
+    padding: 2px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    float: right;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+    -moz-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+    -ms-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+    -o-transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+    transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+}
+.viz-controls-datapicker-facet-menu-button:active, .viz-controls-datapicker-facet-menu-button.viz-controls-datapicker-menu-open {
+    background-color: #3ea1d7;
+    border-color: #008fd3;
+}
+.viz-controls-datapicker-core-support-vi-embedded .viz-controls-datapicker-facet-menu-button {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+.viz-controls-datapicker-facet-member-highlighting:active {
+    background-color: #3ea1d7;
+}
+.viz-controls-datapicker-facet-member-highlighting:active label, .viz-controls-datapicker-facet-member-highlighting:active span {
+    color: #FFFFFF;
+}
+.viz-controls-datapicker-facet-member-highlighting:active .viz-controls-datapicker-facet-bubble {
+    color: #666666;
+}
+.viz-controls-datapicker-facet-bubble-container {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0 4px;
+    height: 100%;
+    max-width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.viz-controls-datapicker-facet-bubble {
+    position: relative;
+    line-height: 14px;
+    background-color: #F2F2F2;
+    border-radius: 3px;
+    padding: 0 4px;
+    vertical-align: top;
+    display: inline-block;
+    max-width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.viz-controls-datapicker-facet .viz-controls-datapicker-facet-search-icon, .viz-controls-datapicker-facet .viz-controls-datapicker-gear-menu-icon {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: inherit;
+}
+.viz-controls-datapicker-facet .viz-controls-datapicker-parent-overlay {
+    white-space: normal;
+    word-wrap: break-word;
+    cursor: default;
+}
+.viz-controls-datapicker-facet .viz-controls-datapicker-parent-overlay p {
+    padding: 0 5px;
+    margin: 0;
+}
+.viz-controls-datapicker-facet .viz-controls-datapicker-parent-overlay.viz-controls-datapicker-facet-message p {
+    color: #808080;
+}
+.viz-controls-datapicker-facet ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.viz-controls-datapicker-facet-show-sub-title .viz-controls-datapicker-facet-header-sub-title {
+    display: block;
+}
+.viz-controls-datapicker-facet-show-sub-title .viz-controls-datapicker-facet-member-value {
+    display: block;
+}
+.viz-controls-datapicker-facet-show-sub-title .viz-controls-datapicker-facet-member-left {
+    float: left;
+}
+.viz-controls-datapicker-facet-show-sub-title .viz-controls-datapicker-facet-header .viz-controls-datapicker-facet-header-left {
+    max-width: 33%;
+}
+.viz-controls-datapicker-facet-area-vertical .viz-controls-datapicker-facet-show-sub-title .viz-controls-datapicker-facet-header .viz-controls-datapicker-facet-header-left {
+    max-width: none;
+}
+.viz-controls-datapicker-facet-show-sub-title .viz-controls-datapicker-facet-members .viz-controls-datapicker-facet-token-label {
+    max-width: 176px;
+}
+.viz-controls-datapicker-facet-show-sub-title .viz-controls-datapicker-facet-bubble-container {
+    max-width: 50%;
+}
+.viz-controls-datapicker-facet-show-back .viz-controls-datapicker-facet-header-back-button {
+    display: block;
+}
+.viz-controls-datapicker-facet-show-back .viz-controls-datapicker-facet-member {
+    padding-left: 30px;
+}
+.viz-controls-datapicker-facet-show-secondary:not(.viz-controls-datapicker-show-search):not(.viz-controls-datapicker-facet-has-mask) .viz-controls-datapicker-facet-members {
+    z-index: 10;
+}
+.viz-controls-datapicker-facet-show-secondary:not(.viz-controls-datapicker-show-search):not(.viz-controls-datapicker-facet-has-mask) .viz-controls-datapicker-facet-members.viz-controls-datapicker-facet-members-secondary {
+    z-index: 20;
+}
+.viz-controls-datapicker-facet-excluded .viz-controls-datapicker-facet-member-selected .viz-controls-datapicker-facet-token-label {
+    text-decoration: line-through;
+}
+.viz-controls-datapicker-facet-header {
+    height: 26px;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    cursor: default;
+    color: #333333;
+    background-color: #FFFFFF;
+}
+.viz-controls-datapicker-facet-header > li {
+    height: 100%;
+}
+.viz-controls-datapicker-facet-header .viz-controls-datapicker-facet-token {
+    margin: 2px 0 2px 2px;
+}
+.viz-controls-datapicker-facet-header .viz-controls-datapicker-facet-bubble {
+    top: 6px;
+}
+.viz-controls-datapicker-facet-header .viz-controls-datapicker-facet-header-left {
+    max-width: 50%;
+}
+.viz-controls-datapicker-facet-header .viz-controls-datapicker-facet-token-label {
+    max-width: 100%;
+}
+.viz-controls-datapicker-facet-header-right {
+    overflow: hidden;
+}
+.viz-controls-datapicker-facet-header-right-text {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.viz-controls-datapicker-facet-header-sub-title {
+    display: none;
+    font-weight: normal;
+    text-align: right;
+    overflow: hidden;
+    line-height: 26px;
+}
+.viz-controls-datapicker-facet-header-back-button {
+    width: 18px;
+    height: 100%;
+    display: none;
+    margin: 0 6px;
+    position: relative;
+}
+.viz-controls-datapicker-facet-header-back-button .viz-controls-datapicker-core-caret-left-icon-16 {
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-header-back-button {
+    padding: 0 8px;
+    margin: 0;
+}
+.viz-controls-datapicker-facet-header-back-button:not(.viz-controls-datapicker-no-hover) .viz-controls-datapicker-core-caret-left-icon-16:active {
+    background-color: #3ea1d7;
+    border-color: #008fd3;
+}
+.viz-controls-datapicker-facet-header-hierarchy-indicator, .viz-controls-datapicker-facet-member-hierarchy-indicator, .viz-controls-datapicker-facet-member-geo-indicator {
+    width: 18px;
+    height: 100%;
+    margin-left: 4px;
+    position: relative;
+}
+.viz-controls-datapicker-facet-header-hierarchy-indicator .viz-controls-datapicker-hierarchy-active-icon-16, .viz-controls-datapicker-facet-member-hierarchy-indicator .viz-controls-datapicker-hierarchy-active-icon-16, .viz-controls-datapicker-facet-header-hierarchy-indicator .viz-controls-datapicker-hierarchy-icon-16, .viz-controls-datapicker-facet-member-hierarchy-indicator .viz-controls-datapicker-hierarchy-icon-16 {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+}
+.viz-controls-datapicker-facet-member-hierarchy-indicator {
+    float: left;
+}
+.viz-controls-datapicker-facet-member-geo-indicator {
+    float : left;
+}
+.viz-controls-datapicker-facet-member-hierarchy-indicator .viz-controls-datapicker-hierarchy-active-icon-16, .viz-controls-datapicker-facet-member-hierarchy-indicator .viz-controls-datapicker-hierarchy-icon-16 {
+    cursor: pointer;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-member-hierarchy-indicator {
+    padding-left: 4px;
+    margin: 0;
+}
+.viz-controls-datapicker-facet-member-hierarchy-indicator .viz-controls-datapicker-hierarchy-active-icon-16, .viz-controls-datapicker-facet-member-hierarchy-indicator .viz-controls-datapicker-hierarchy-icon-16:active {
+    background-color: #007CC0;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-menu-button, .viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet:hover .viz-controls-datapicker-facet-header .viz-controls-datapicker-facet-menu-button, .viz-controls-datapicker-core-support-mouse .viz-controls-datapicker-facet-member:hover .viz-controls-datapicker-facet-menu-button, .viz-controls-datapicker-facet .viz-controls-datapicker-facet-menu-button.viz-controls-datapicker-menu-open {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.viz-controls-datapicker-facet-members {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFF;
+}
+.viz-controls-datapicker-facet-member-list {
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+}
+.viz-controls-datapicker-flipped .viz-controls-datapicker-facet-member-list {
+    opacity: 0;
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+.viz-controls-datapicker-facet-members {
+    top: 26px;
+    -webkit-transition: top 0.3s ease-out;
+    -moz-transition: top 0.3s ease-out;
+    -ms-transition: top 0.3s ease-out;
+    -o-transition: top 0.3s ease-out;
+    transition: top 0.3s ease-out;
+}
+.viz-controls-datapicker-show-search > .viz-controls-datapicker-facet-members {
+    top: 50px;
+}
+.viz-controls-datapicker-facet-member-item {
+    height: 22px;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+.viz-controls-datapicker-facet-member-item.viz-controls-datapicker-facet-member-item-indent {
+    margin-left: 28px;
+}
+.viz-controls-datapicker-facet-member-item.viz-controls-datapicker-facet-member-selected {
+    background-color: rgba(0, 124, 192, 0.1);
+}
+.viz-controls-datapicker-facet-expandable .viz-controls-datapicker-facet-member {
+    margin-left: 22px;
+}
+.viz-controls-datapicker-facet-member {
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: default;
+}
+.viz-controls-datapicker-facet-member .viz-controls-datapicker-facet-menu-button {
+    margin: 0 4px 0 0;
+}
+.viz-controls-datapicker-facet-member .viz-controls-datapicker-facet-bubble {
+    top: 4px;
+}
+.viz-controls-datapicker-facet-member-left {
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+}
+.viz-controls-datapicker-facet-member-expand-button {
+    width: 18px;
+    height: 100%;
+    position: relative;
+    float: right;
+    margin-right: 8px;
+}
+.viz-controls-datapicker-facet-member-expand-button .viz-controls-datapicker-plus-icon-16, .viz-controls-datapicker-facet-member-expand-button .viz-controls-datapicker-minus-active-icon-16 {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    cursor: pointer;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-member-expand-button {
+    padding: 0 8px;
+    margin: 0;
+}
+.viz-controls-datapicker-facet-member-expand-button .viz-controls-datapicker-minus-active-icon-16, .viz-controls-datapicker-facet-member-expand-button .viz-controls-datapicker-plus-icon-16:active {
+    background-color: #007CC0;
+}
+.viz-controls-datapicker-facet-member-drill-button {
+    width: 18px;
+    height: 100%;
+    margin-right: 8px;
+    position: relative;
+    float: right;
+}
+.viz-controls-datapicker-facet-member-drill-button .viz-controls-datapicker-core-caret-right-icon-16 {
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.viz-controls-datapicker-core-support-touch .viz-controls-datapicker-facet-member-drill-button {
+    padding: 0 8px;
+    margin: 0;
+}
+.viz-controls-datapicker-facet-member-drill-button:not(.viz-controls-datapicker-no-hover) .viz-controls-datapicker-core-caret-right-icon-16:active {
+    background-color: #3ea1d7;
+    border-color: #008fd3;
+}
+.viz-controls-datapicker-facet-token {
+    padding: 0 3px;
+    height: 22px;
+    max-width: 100%;
+    float: left;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin-left: 0px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.viz-controls-datapicker-facet-token.ui-state-disabled {
+    opacity: 1;
+}
+.viz-controls-datapicker-facet-token-label {
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: top;
+}
+.viz-controls-datapicker-facet-member-value {
+    display: none;
+    font-weight: normal;
+    text-align: right;
+    padding-right: 6px;
+    line-height: 22px;
+}
+.viz-controls-datapicker-shelf-token {
+    cursor: move;
+    width: 100%;
+    padding: 0px 0px 0px 3px;
+    display: block;
+    position: relative;
+    color: #FFFFFF;
+    background-color: #666666;
+    background: #666666;
+    border: 1px solid #333;
+    border-radius: 3px;
+    font-weight: bold;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
+.viz-controls-datapicker-geo-icon-16 {
+    background-image: url('../common/assets/UVB_SharedSprite.png');
+    background-position: 0px -101px;
 }

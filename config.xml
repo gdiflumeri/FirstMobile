@@ -3,12 +3,13 @@
 <name>NEW_PRODUCT_REQ</name>
 <description>New Product Request</description>
 <gap:plugin name="com.brodysoft.sqliteplugin" />
+<gap:plugin name="io.github.pwlin.cordova.plugins.fileopener2" />
 <gap:platform name="android" />
 <gap:platform name="ios" />
 <preference name="phonegap-version" value="3.6.3" />
 <gap:plugin name="com.phonegap.plugin.statusbar" />
 <preference name="StatusBarOverlaysWebView" value="false" />
-<preference name="splash-screen-duration" value="10000" />
+<preference name="SplashScreenDelay" value="20000" />
 <preference name="auto-hide-splash-screen" value="false" />
 <feature name="http://api.phonegap.com/1.0/file"/>
 <feature name="http://api.phonegap.com/1.0/media"/>
@@ -31,6 +32,6 @@
 <gap:plugin name="org.apache.cordova.dialogs" />
 <gap:plugin name="org.apache.cordova.splashscreen" />
 <gap:plugin name="org.apache.cordova.vibration" />
-<gap:plugin name="io.github.pwlin.cordova.plugins.fileopener2" version="1.0.11" />
+<gap:plugin name="io.github.pwlin.cordova.plugins.fileopener2" />
 <access origin="*" subdomains="true"/>
 </widget>

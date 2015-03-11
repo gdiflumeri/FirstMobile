@@ -33,6 +33,16 @@ Parameter which stored a long css setting string for cvom's chart's internal use
 
 @sapVizChartHiddenTitleColor: #a6a6a6;
 
+@sapUiChartPopoverDataItemFontColor : #000000;
+
+@sapUiChartPopoverGroupFontColor : #000000;
+
+@sapUiChartPopoverDataItemFontSize : 12px;
+
+@sapUiChartPopoverGroupFontSize : 12px;
+
+@sapUiChartPopoverGroupFontWeight : bold;
+
 .sapVizChartTitleSettings () {
 	fill:@sapVizChartTitleColor;
 	font-family:@sapUiFontFamily;
@@ -47,124 +57,124 @@ Parameter which stored a long css setting string for cvom's chart's internal use
   fill : @sapVizChartHiddenTitleColor;
 }
 
-.v-m-title .v-title{
+.sapVizChart .v-m-title .v-title{
 	.sapVizChartTitleSettings
 }
 
-.v-subtitle{
+.sapVizChart .v-subtitle{
 	.sapVizChartTitleSettings
 }
 
-.v-title{
+.sapVizChart .v-title{
 	.sapVizChartTitleSettings
 }
 
-.v-hidden-title{
+.sapVizChart .v-hidden-title{
 	.sapVizChartHiddenTitleSettings
 }
 
-.v-pie .v-donut-title{
+.sapVizChart .v-pie .v-donut-title{
 	.sapVizChartTitleSettings
 }
 
-.v-m-tooltip .v-body-title{
+.sapVizChart .v-m-tooltip .v-body-title{
 	.sapVizChartTitleSettings
 }
 
-.v-label{
+.sapVizChart .v-label{
 	.sapVizChartLabelSettings
 }
 
-.viz-polar-axis-label{
+.sapVizChart .viz-polar-axis-label{
 	.sapVizChartLabelSettings
 }
 
-.v-datalabel{
+.sapVizChart .v-datalabel{
 	.sapVizChartLabelSettings
 }
 
-.v-m-tooltip .v-body-label{
+.sapVizChart .v-m-tooltip .v-body-label{
 	.sapVizChartLabelSettings
 }
 
-.v-m-tooltip .v-body-value{
+.sapVizChart .v-m-tooltip .v-body-value{
 	.sapVizChartLabelSettings
 }
 
-.v-m-tooltip .v-footer-label{
+.sapVizChart .v-m-tooltip .v-footer-label{
 	.sapVizChartLabelSettings
 }
 
-.v-m-tooltip .v-footer-value{
+.sapVizChart .v-m-tooltip .v-footer-value{
 	.sapVizChartLabelSettings
 }
 
-.v-m-tooltip .v-separationline{
+.sapVizChart .v-m-tooltip .v-separationline{
 	stroke: @sapVizChartTooltipBorderStroke;
 }
 
-.v-background-body{
+.sapVizChart .v-background-body{
 	fill:@sapVizChartBackgroundColor;
 }
 
-.v-background-border{
+.sapVizChart .v-background-border{
 	stroke : @sapVizChartBackgroundStroke;
 }
 
-.v-hoverline{
+.sapVizChart .v-hoverline{
 	stroke:@sapVizChartHoverline;
 }
 
-.v-hovershadow{
+.sapVizChart .v-hovershadow{
 	fill:@sapVizChartHoverShadow;
 }
 
-.v-hovershadow-mousedown{
+.sapVizChart .v-hovershadow-mousedown{
 	fill:@sapVizChartHoverShadowMouseDown;
 }
 
-.v-m-tooltip .v-background{
+.sapVizChart .v-m-tooltip .v-background{
 	fill:@sapVizChartTooltipBackgroundColor;
 	stroke:@sapVizChartTooltipBorderStroke;
 }
 
-.v-m-tooltip .v-closeButton{
+.sapVizChart .v-m-tooltip .v-closeButton{
   background-color:@sapVizChartTooltipBackgroundColor  !important;
   border-color:@sapVizChartTooltipBorderStroke  !important;
 }
 
-.v-background{  
+.sapVizChart .v-background{  
 	border-color : @sapVizChartTooltipBorderStroke!important;
 }
 
-.v-innerwhisker{
+.sapVizChart .v-innerwhisker{
 	stroke:@sapVizChartInnerWhisker;
 }
 
-.v-categoryaxisline{
+.sapVizChart .v-categoryaxisline{
 	stroke:@sapVizChartAxisColor;
 }
 
-.v-valueaxisline{
+.sapVizChart .v-valueaxisline{
 	stroke: @sapVizChartAxisColor;
 }
 
-.v-gridline{
+.sapVizChart .v-gridline{
 	stroke: @sapVizChartAxisGridlineColor;
 }
 
-.sapVizChart {
+.sapVizChart .sapVizChart {
 	position: relative;
 }
 
-.sapVizChart.sapVizNoData {
+.sapVizChart .sapVizChart.sapVizNoData {
 	/*background-color: @sapUiLightBG;*/
 	border: 1px solid @sapUiExtraLightBorder;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 }
 
-.sapVizChart.sapVizNoData > .sapVizNoDataDefault {
+.sapVizChart .sapVizChart.sapVizNoData > .sapVizNoDataDefault {
 	position: absolute;
 	display: block;
 	bottom: 50%;
@@ -172,4 +182,24 @@ Parameter which stored a long css setting string for cvom's chart's internal use
 	right: 0;
 	text-align: center;
 	white-space: nowrap;
+}
+
+/*Below classes are moved from popover.css for theme designer*/
+.viz-controls-chartPopover .viz-controls-chartPopover-measures-item .sapMDLILabel{
+  width: 50%;
+  font-size: @sapUiChartPopoverDataItemFontSize;
+  color: @sapUiChartPopoverDataItemFontColor;
+  padding-left : 1.25rem;
+}
+
+.viz-controls-chartPopover .viz-controls-chartPopover-measures-item .sapMDLIValue{
+  font-size: @sapUiChartPopoverDataItemFontSize;
+  color: @sapUiChartPopoverDataItemFontColor;
+}
+
+.viz-controls-chartPopover .viz-controls-chartPopover-dimension-label{
+  font-weight: @sapUiChartPopoverGroupFontWeight;
+  color: @sapUiChartPopoverGroupFontColor;
+  line-height: 1.4375rem;
+  font-size: @sapUiChartPopoverGroupFontSize;
 }

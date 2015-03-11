@@ -3,10 +3,10 @@
 
   <name>sap.ui.commons</name>
   <vendor>SAP SE</vendor>
-  <copyright>SAP UI development toolkit for HTML5 (SAPUI5)
-
-(c) Copyright 2009-2014 SAP SE. All rights reserved</copyright>
-  <version>1.24.2</version>
+  <copyright>SAP UI development toolkit for HTML5 (SAPUI5/OpenUI5)
+ * (c) Copyright 2009-2014 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.</copyright>
+  <version>1.26.3</version>
 
   <documentation>Common basic controls, mainly intended for desktop scenarios</documentation>
   
@@ -26,6 +26,10 @@
         <exclude name="sap.ui.commons.js." />
         <exclude name="sap.ui.commons.DatePicker*" />
     </jscoverage>
+    <releasenotes xmlns="http://www.sap.com/ui5/buildext/releasenotes"
+        url="../../../../test-resources/sap/ui/commons/relnotes/changes-{major}.{minor}.json"
+        resolve="lib" />
+    
   </appData>
   
 </library>

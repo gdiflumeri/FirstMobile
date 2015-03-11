@@ -2,7 +2,6 @@
 <Library name="sap.ui.table" xmlns="http://www.sap.com/ui5/ide/templates/xmlview">
 <Template name="sap.ui.table.AnalyticalColumn" alias="AnalyticalColumn,Column">
 	<jsTemplate><![CDATA[new sap.ui.table.AnalyticalColumn({
-	id: "${id}", // sap.ui.core.ID
 	width: undefined, // sap.ui.core.CSSSize
 	flexible: true, // boolean
 	resizable: true, // boolean
@@ -38,7 +37,6 @@
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<AnalyticalColumn xmlns="sap.ui.table"
-	id="${id}"
 	width=""
 	flexible="true"
 	resizable="true"
@@ -75,24 +73,32 @@
 </Template>
 <Template name="sap.ui.table.AnalyticalColumnMenu" alias="AnalyticalColumnMenu,Menu">
 	<jsTemplate><![CDATA[new sap.ui.table.AnalyticalColumnMenu({
-	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
 	enabled: true, // boolean
 	ariaDescription: undefined, // string
 	maxVisibleItems: 0, // int
+	pageSize: 5, // int, since 1.25.0
 	tooltip: undefined, // sap.ui.core.TooltipBase
 	customData: [], // sap.ui.core.CustomData
 	dependents: [], // sap.ui.core.Control, since 1.19
 	items: [], // sap.ui.unified.MenuItemBase
+	ariaLabelledBy: [], // sap.ui.core.Control, since 1.26.3
 	itemSelect: [function (oEvent) {
 		var ${control} = oEvent.getSource();
 	}, this]
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<AnalyticalColumnMenu xmlns="sap.ui.table"
-	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
 	enabled="true"
 	ariaDescription=""
 	maxVisibleItems="0"
+	pageSize="5"
+	ariaLabelledBy=""
 	itemSelect="">
 		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
 		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
@@ -102,7 +108,9 @@
 </Template>
 <Template name="sap.ui.table.AnalyticalTable" alias="AnalyticalTable,Table">
 	<jsTemplate><![CDATA[new sap.ui.table.AnalyticalTable({
-	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
 	width: "auto", // sap.ui.core.CSSSize
 	rowHeight: undefined, // int
 	columnHeaderHeight: undefined, // int
@@ -186,7 +194,9 @@
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<AnalyticalTable xmlns="sap.ui.table"
-	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
 	width="auto"
 	rowHeight=""
 	columnHeaderHeight=""
@@ -247,7 +257,6 @@
 </Template>
 <Template name="sap.ui.table.Column" alias="Column">
 	<jsTemplate><![CDATA[new sap.ui.table.Column({
-	id: "${id}", // sap.ui.core.ID
 	width: undefined, // sap.ui.core.CSSSize
 	flexible: true, // boolean
 	resizable: true, // boolean
@@ -278,7 +287,6 @@
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<Column xmlns="sap.ui.table"
-	id="${id}"
 	width=""
 	flexible="true"
 	resizable="true"
@@ -310,24 +318,32 @@
 </Template>
 <Template name="sap.ui.table.ColumnMenu" alias="ColumnMenu,Menu">
 	<jsTemplate><![CDATA[new sap.ui.table.ColumnMenu({
-	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
 	enabled: true, // boolean
 	ariaDescription: undefined, // string
 	maxVisibleItems: 0, // int
+	pageSize: 5, // int, since 1.25.0
 	tooltip: undefined, // sap.ui.core.TooltipBase
 	customData: [], // sap.ui.core.CustomData
 	dependents: [], // sap.ui.core.Control, since 1.19
 	items: [], // sap.ui.unified.MenuItemBase
+	ariaLabelledBy: [], // sap.ui.core.Control, since 1.26.3
 	itemSelect: [function (oEvent) {
 		var ${control} = oEvent.getSource();
 	}, this]
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<ColumnMenu xmlns="sap.ui.table"
-	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
 	enabled="true"
 	ariaDescription=""
 	maxVisibleItems="0"
+	pageSize="5"
+	ariaLabelledBy=""
 	itemSelect="">
 		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
 		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
@@ -337,7 +353,9 @@
 </Template>
 <Template name="sap.ui.table.DataTable" alias="DataTable,Table">
 	<jsTemplate><![CDATA[new sap.ui.table.DataTable({
-	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
 	width: "auto", // sap.ui.core.CSSSize
 	rowHeight: undefined, // int
 	columnHeaderHeight: undefined, // int
@@ -429,7 +447,9 @@
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<DataTable xmlns="sap.ui.table"
-	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
 	width="auto"
 	rowHeight=""
 	columnHeaderHeight=""
@@ -494,7 +514,6 @@
 </Template>
 <Template name="sap.ui.table.Row" alias="Row">
 	<jsTemplate><![CDATA[new sap.ui.table.Row({
-	id: "${id}", // sap.ui.core.ID
 	tooltip: undefined, // sap.ui.core.TooltipBase
 	customData: [], // sap.ui.core.CustomData
 	dependents: [], // sap.ui.core.Control, since 1.19
@@ -502,7 +521,7 @@
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<Row xmlns="sap.ui.table"
-	id="${id}">
+>
 		<tooltip></tooltip> <!-- sap.ui.core.TooltipBase -->
 		<dependents></dependents> <!-- sap.ui.core.Control, since 1.19 -->
 		<cells></cells> <!-- sap.ui.core.Control -->
@@ -511,7 +530,9 @@
 </Template>
 <Template name="sap.ui.table.Table" alias="Table">
 	<jsTemplate><![CDATA[new sap.ui.table.Table({
-	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
 	width: "auto", // sap.ui.core.CSSSize
 	rowHeight: undefined, // int
 	columnHeaderHeight: undefined, // int
@@ -591,7 +612,9 @@
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<Table xmlns="sap.ui.table"
-	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
 	width="auto"
 	rowHeight=""
 	columnHeaderHeight=""
@@ -648,7 +671,9 @@
 </Template>
 <Template name="sap.ui.table.TreeTable" alias="TreeTable,Table">
 	<jsTemplate><![CDATA[new sap.ui.table.TreeTable({
-	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
 	width: "auto", // sap.ui.core.CSSSize
 	rowHeight: undefined, // int
 	columnHeaderHeight: undefined, // int
@@ -734,7 +759,9 @@
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<TreeTable xmlns="sap.ui.table"
-	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
 	width="auto"
 	rowHeight=""
 	columnHeaderHeight=""

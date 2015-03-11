@@ -266,6 +266,10 @@
     "sapUiShadowTint": "#000000",
     "sapUiShadow": "5px 5px 10px rgba(0, 0, 0, 0.5)",
     "sapUiThemeDesignerCustomCss": "false",
+    "sapUiMarginTiny": "0.5rem",
+    "sapUiMarginSmall": "1rem",
+    "sapUiMarginMedium": "2rem",
+    "sapUiMarginLarge": "3rem",
     "sapVizChartBackgroundColor": "#ffffff",
     "sapVizChartTooltipBackgroundColor": "#ffffff",
     "sapVizChartBackgroundStroke": "#d8d8d8",
@@ -280,5 +284,10 @@
     "sapVizChartAxisColor": "#000000",
     "sapVizChartAxisGridlineColor": "#d8d8d8",
     "sapVizChartTooltipBorderStroke": "#d8d8d8",
-    "sapVizChartHiddenTitleColor": "#a6a6a6"
+    "sapVizChartHiddenTitleColor": "#a6a6a6",
+    "sapUiChartPopoverDataItemFontColor": "#000000",
+    "sapUiChartPopoverGroupFontColor": "#000000",
+    "sapUiChartPopoverDataItemFontSize": "12px",
+    "sapUiChartPopoverGroupFontSize": "12px",
+    "sapUiChartPopoverGroupFontWeight": "bold"
 }

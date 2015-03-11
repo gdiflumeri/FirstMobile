@@ -3,12 +3,12 @@
 /*!
  * SAP UI development toolkit for HTML5 (SAPUI5)
  *
- * (c) Copyright 2009-2014 SAP SE. All rights reserved
+ * (c) Copyright 2009-2015 SAP SE. All rights reserved
  */
 
 @import "../../../../../Base/baseLib/baseTheme/base.less"; /* ORIGINAL IMPORT PATH: "../../../../sap/ui/core/themes/base/base.less" */
 
-@import (less) "../../../../sap/ui/core/themes/base/global.css";
+@import "../../../../sap/ui/core/themes/base/global.less";
 /* START "shared.css" */
 
 /*
@@ -44,6 +44,16 @@ Parameter which stored a long css setting string for cvom's chart's internal use
 @sapVizChartTooltipBorderStroke: @sapVizChartBackgroundStroke;
 
 @sapVizChartHiddenTitleColor: #a6a6a6;
+
+@sapUiChartPopoverDataItemFontColor : #000000;
+
+@sapUiChartPopoverGroupFontColor : #000000;
+
+@sapUiChartPopoverDataItemFontSize : 12px;
+
+@sapUiChartPopoverGroupFontSize : 12px;
+
+@sapUiChartPopoverGroupFontWeight : bold;
 
 .sapVizChartTitleSettings () {
 	fill:@sapVizChartTitleColor;
@@ -184,6 +194,26 @@ Parameter which stored a long css setting string for cvom's chart's internal use
 	right: 0;
 	text-align: center;
 	white-space: nowrap;
+}
+
+/*Below classes are moved from popover.css for theme designer*/
+.viz-controls-chartPopover .viz-controls-chartPopover-measures-item .sapMDLILabel{
+  width: 50%;
+  font-size: @sapUiChartPopoverDataItemFontSize;
+  color: @sapUiChartPopoverDataItemFontColor;
+  padding-left : 1.25rem;
+}
+
+.viz-controls-chartPopover .viz-controls-chartPopover-measures-item .sapMDLIValue{
+  font-size: @sapUiChartPopoverDataItemFontSize;
+  color: @sapUiChartPopoverDataItemFontColor;
+}
+
+.viz-controls-chartPopover .viz-controls-chartPopover-dimension-label{
+  font-weight: @sapUiChartPopoverGroupFontWeight;
+  color: @sapUiChartPopoverGroupFontColor;
+  line-height: 1.4375rem;
+  font-size: @sapUiChartPopoverGroupFontSize;
 }
 
 /* END "shared.css" */

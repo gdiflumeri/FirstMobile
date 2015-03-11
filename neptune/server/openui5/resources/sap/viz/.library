@@ -6,7 +6,7 @@
 	<copyright>SAP UI development toolkit for HTML5 (SAPUI5)
 
 (c) Copyright 2009-2014 SAP SE. All rights reserved</copyright>
-	<version>1.24.2</version>
+	<version>1.26.3</version>
 
 	<documentation>Chart controls based on the SAP BI CVOM charting library</documentation>
 
@@ -91,6 +91,9 @@
 				<license url="http://www.phpied.com/rgb-color-parser-in-javascript/" type="Use it if you like it" file="ui5/controls/libs/common/libs/rgbcolor/rgbcolor_static.js" />
 			</lib>
 		</thirdparty>
+		<releasenotes xmlns="http://www.sap.com/ui5/buildext/releasenotes"
+			url="../../../test-resources/sap/viz/relnotes/changes-{major}.{minor}.json"
+			resolve="lib" />
 	</appData>
 
 </library>

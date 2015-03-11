@@ -209,6 +209,7 @@
     "sapUiUx3ShellHoverColor": "#000000",
     "sapUiUx3ShellSideBarBaseWidth": "40px",
     "sapUiUx3ShellPaneOverflowButtonHeight": "120px",
+    "sapUiUx3ShellToolPaletteIconFontColor": "#8899aa",
     "sapUiUx3ExactLstExpandOffset": "0 0",
     "sapUiUx3ExactLstRootExpandOffset": "0 3",
     "sapUiUx3ExactLstCollapseWidth": "24px",
@@ -264,6 +265,11 @@
     "sapUiPositiveBG": "#b5e7a8",
     "sapUiShadowTint": "#000000",
     "sapUiShadow": "5px 5px 10px rgba(0, 0, 0, 0.5)",
+    "sapUiThemeDesignerCustomCss": "false",
+    "sapUiMarginTiny": "0.5rem",
+    "sapUiMarginSmall": "1rem",
+    "sapUiMarginMedium": "2rem",
+    "sapUiMarginLarge": "3rem",
     "sapVizChartBackgroundColor": "#ffffff",
     "sapVizChartTooltipBackgroundColor": "#ffffff",
     "sapVizChartBackgroundStroke": "#d8d8d8",
@@ -278,5 +284,10 @@
     "sapVizChartAxisColor": "#000000",
     "sapVizChartAxisGridlineColor": "#d8d8d8",
     "sapVizChartTooltipBorderStroke": "#d8d8d8",
-    "sapVizChartHiddenTitleColor": "#a6a6a6"
+    "sapVizChartHiddenTitleColor": "#a6a6a6",
+    "sapUiChartPopoverDataItemFontColor": "#000000",
+    "sapUiChartPopoverGroupFontColor": "#000000",
+    "sapUiChartPopoverDataItemFontSize": "12px",
+    "sapUiChartPopoverGroupFontSize": "12px",
+    "sapUiChartPopoverGroupFontWeight": "bold"
 }

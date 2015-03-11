@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <library  version="2.0" name="sap.viz">
-  <module name="sap/viz/library.js" size="69352" compressedSize="20534">
-    <description>Initialization Code and shared classes of library sap.viz (1.24.2)</description>
+  <module name="sap/viz/library.js" size="68943" compressedSize="20550">
+    <description>Initialization Code and shared classes of library sap.viz (1.26.3)</description>
     <requires>
       <module name="sap/ui/core/Core.js"/>
       <module name="sap/ui/core/library.js"/>
@@ -14,7 +14,7 @@
       <module name="sap/viz/ui5/controls/libs/common/libs/rgbcolor/rgbcolor_static.js" conditional="true"/>
       <module name="sap/viz/libs/canvg.js" conditional="true"/>
       <module name="sap/viz/libs/rgbcolor.js" conditional="true"/>
-      <module name="sap/viz/libs/sap-viz.js" conditional="true"/>
+      <module name="sap/viz/libs/sap-viz-info.js" conditional="true"/>
       <module name="jquery.sap.global.js"/>
     </requires>
     <includes>
@@ -72,7 +72,9 @@
   </module>
   <module name="sap/viz/libs/sap-common-globalization.js" size="203456" compressedSize="193257" excludeFromAllInOne="true" raw="true">
   </module>
-  <module name="sap/viz/libs/sap-viz.js" size="6323208" compressedSize="2846237" excludeFromAllInOne="true" requiresTopLevelScope="true" exposedGlobals="requirejs,require,define" raw="true">
+  <module name="sap/viz/libs/sap-viz-info.js" size="2574498" compressedSize="1126294" requiresTopLevelScope="true" exposedGlobals="requirejs,require,define,i,ChartViewRegistry,e" raw="true">
+  </module>
+  <module name="sap/viz/libs/sap-viz.js" size="4422978" compressedSize="1994500" excludeFromAllInOne="true" requiresTopLevelScope="true" exposedGlobals="requirejs,require,define,i" raw="true">
   </module>
   <module name="sap/viz/libs/sap.viz.javafx.patch.js" size="3255" compressedSize="1378" excludeFromAllInOne="true" raw="true">
   </module>
@@ -436,11 +438,12 @@
       <module name="jquery.sap.global.js"/>
     </requires>
   </module>
-  <module name="sap/viz/ui5/VizContainer.js" size="56134" compressedSize="10548">
+  <module name="sap/viz/ui5/VizContainer.js" size="56239" compressedSize="10644">
     <description>Provides control sap.viz.ui5.VizContainer.</description>
     <requires>
       <module name="sap/viz/library.js"/>
       <module name="sap/viz/ui5/controls/common/BaseControl.js"/>
+      <module name="sap/viz/libs/sap-viz.js"/>
       <module name="sap/viz/ui5/controls/libs/sap-viz-controls-vizcontainer.js"/>
       <module name="sap/viz/ui5/controls/common/feeds/AnalysisObject.js"/>
       <module name="sap/viz/ui5/controls/common/feeds/FeedItem.js"/>
@@ -454,7 +457,7 @@
       <module name="jquery.sap.global.js"/>
     </requires>
   </module>
-  <module name="sap/viz/ui5/api/env/Format.js" size="1426" compressedSize="323">
+  <module name="sap/viz/ui5/api/env/Format.js" size="1354" compressedSize="323">
     <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2014 SAP SE. All rights reserved</description>
     <requires>
       <module name="jquery.sap.global.js"/>
@@ -481,7 +484,7 @@
       <module name="jquery.sap.global.js"/>
     </requires>
   </module>
-  <module name="sap/viz/ui5/controls/VizFrame.js" size="34321" compressedSize="8671">
+  <module name="sap/viz/ui5/controls/VizFrame.js" size="39972" compressedSize="11154">
     <description>Provides control sap.viz.ui5.controls.VizFrame.</description>
     <requires>
       <module name="sap/viz/library.js"/>
@@ -491,6 +494,7 @@
       <module name="sap/viz/ui5/controls/common/feeds/FeedItem.js"/>
       <module name="sap/viz/ui5/controls/common/helpers/VizControlsHelper.js"/>
       <module name="sap/viz/ui5/controls/ResponsiveLegend.js"/>
+      <module name="sap/viz/ui5/theming/Util.js"/>
       <module name="jquery.sap.global.js"/>
     </requires>
   </module>
@@ -500,7 +504,7 @@
       <module name="jquery.sap.global.js"/>
     </requires>
   </module>
-  <module name="sap/viz/ui5/controls/common/BaseControl.js" size="9822" compressedSize="3627">
+  <module name="sap/viz/ui5/controls/common/BaseControl.js" size="10197" compressedSize="3935">
     <description>Provides control sap.viz.ui5.controls.common.BaseControl.</description>
     <requires>
       <module name="sap/viz/library.js"/>
@@ -514,7 +518,7 @@
       <module name="jquery.sap.global.js"/>
     </requires>
   </module>
-  <module name="sap/viz/ui5/controls/common/feeds/AnalysisObject.js" size="8750" compressedSize="2655">
+  <module name="sap/viz/ui5/controls/common/feeds/AnalysisObject.js" size="7682" compressedSize="1741">
     <description>Provides control sap.viz.ui5.controls.common.feeds.AnalysisObject.</description>
     <requires>
       <module name="sap/viz/library.js"/>
@@ -522,7 +526,7 @@
       <module name="jquery.sap.global.js"/>
     </requires>
   </module>
-  <module name="sap/viz/ui5/controls/common/feeds/FeedItem.js" size="9339" compressedSize="2742">
+  <module name="sap/viz/ui5/controls/common/feeds/FeedItem.js" size="8554" compressedSize="2107">
     <description>Provides control sap.viz.ui5.controls.common.feeds.FeedItem.</description>
     <requires>
       <module name="sap/viz/library.js"/>
@@ -531,7 +535,7 @@
       <module name="jquery.sap.global.js"/>
     </requires>
   </module>
-  <module name="sap/viz/ui5/controls/common/helpers/VizControlsHelper.js" size="5056" compressedSize="2772">
+  <module name="sap/viz/ui5/controls/common/helpers/VizControlsHelper.js" size="5207" compressedSize="2854">
     <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2014 SAP SE. All rights reserved</description>
     <requires>
       <module name="jquery.sap.global.js"/>
@@ -541,13 +545,14 @@
   </module>
   <module name="sap/viz/ui5/controls/libs/sap-viz-controls-vizcontainer.js" size="2093519" compressedSize="883128" excludeFromAllInOne="true" raw="true">
   </module>
-  <module name="sap/viz/ui5/controls/libs/sap-viz-controls.js" size="1480273" compressedSize="588626" excludeFromAllInOne="true" raw="true">
+  <module name="sap/viz/ui5/controls/libs/sap-viz-controls.js" size="1743119" compressedSize="694413" excludeFromAllInOne="true" raw="true">
   </module>
-  <module name="sap/viz/ui5/core/BaseChart.js" size="19623" compressedSize="5333">
+  <module name="sap/viz/ui5/core/BaseChart.js" size="19670" compressedSize="5376">
     <description>Provides control sap.viz.ui5.core.BaseChart.</description>
     <requires>
       <module name="sap/viz/library.js"/>
       <module name="sap/ui/core/Control.js"/>
+      <module name="sap/viz/libs/sap-viz.js"/>
       <module name="sap/viz/ui5/core/BaseStructuredType.js"/>
       <module name="sap/ui/core/theming/Parameters.js"/>
       <module name="jquery.sap.global.js"/>
@@ -583,13 +588,11 @@
       <module name="jquery.sap.global.js"/>
     </requires>
   </module>
-  <module name="sap/viz/ui5/data/FlattenedDataset.js" size="18005" compressedSize="2782">
+  <module name="sap/viz/ui5/data/FlattenedDataset.js" size="17929" compressedSize="2782">
     <description>Provides control sap.viz.ui5.data.FlattenedDataset.</description>
     <requires>
       <module name="sap/viz/library.js"/>
       <module name="sap/viz/ui5/data/Dataset.js"/>
-      <module name="sap/viz/ui5/data/transformers/ModelToCrosstable.js"/>
-      <module name="sap/viz/ui5/data/transformers/ModelToFlattable.js"/>
       <module name="jquery.sap.global.js"/>
     </requires>
   </module>
@@ -601,13 +604,13 @@
       <module name="jquery.sap.global.js"/>
     </requires>
   </module>
-  <module name="sap/viz/ui5/data/transformers/ModelToCrosstable.js" size="9533" compressedSize="3160">
+  <module name="sap/viz/ui5/data/transformers/ModelToCrosstable.js" size="9691" compressedSize="3269">
     <description>SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2014 SAP SE. All rights reserved</description>
     <requires>
       <module name="jquery.sap.global.js"/>
     </requires>
   </module>
-  <module name="sap/viz/ui5/data/transformers/ModelToFlattable.js" size="2890" compressedSize="1641">
+  <module name="sap/viz/ui5/data/transformers/ModelToFlattable.js" size="3049" compressedSize="1743">
     <description>SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2014 SAP SE. All rights reserved</description>
     <requires>
       <module name="jquery.sap.global.js"/>
@@ -630,6 +633,10 @@
   <module name="sap/viz/ui5/messages/messagebundle_el.properties" size="338">
   </module>
   <module name="sap/viz/ui5/messages/messagebundle_en.properties" size="217">
+  </module>
+  <module name="sap/viz/ui5/messages/messagebundle_en_US_sappsd.properties" size="319">
+  </module>
+  <module name="sap/viz/ui5/messages/messagebundle_en_US_saptrc.properties" size="263">
   </module>
   <module name="sap/viz/ui5/messages/messagebundle_es.properties" size="222">
   </module>
@@ -688,6 +695,12 @@
   <module name="sap/viz/ui5/messages/messagebundle_zh_CN.properties" size="237">
   </module>
   <module name="sap/viz/ui5/messages/messagebundle_zh_TW.properties" size="236">
+  </module>
+  <module name="sap/viz/ui5/theming/Util.js" size="9353" compressedSize="5240">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)  (c) Copyright 2009-2014 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
   </module>
   <module name="sap/viz/ui5/types/Area.js" size="18477" compressedSize="2284">
     <description>Provides control sap.viz.ui5.types.Area.</description>

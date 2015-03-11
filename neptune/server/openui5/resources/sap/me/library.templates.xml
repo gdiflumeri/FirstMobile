@@ -2,7 +2,9 @@
 <Library name="sap.me" xmlns="http://www.sap.com/ui5/ide/templates/xmlview">
 <Template name="sap.me.Calendar" alias="Calendar">
 	<jsTemplate><![CDATA[new sap.me.Calendar({
-	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
 	visible: true, // boolean
 	hideNavControls: false, // boolean
 	hideMonthTitles: false, // boolean
@@ -38,7 +40,9 @@
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<Calendar xmlns="sap.me"
-	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
 	visible="true"
 	hideNavControls="false"
 	hideMonthTitles="false"
@@ -69,7 +73,9 @@
 </Template>
 <Template name="sap.me.CalendarLegend" alias="CalendarLegend,Legend">
 	<jsTemplate><![CDATA[new sap.me.CalendarLegend({
-	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
 	legendForType00: undefined, // string
 	legendForType01: undefined, // string
 	legendForType04: undefined, // string
@@ -91,7 +97,9 @@
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<CalendarLegend xmlns="sap.me"
-	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
 	legendForType00=""
 	legendForType01=""
 	legendForType04=""
@@ -114,7 +122,9 @@
 </Template>
 <Template name="sap.me.OverlapCalendar" alias="OverlapCalendar,Calendar">
 	<jsTemplate><![CDATA[new sap.me.OverlapCalendar({
-	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
 	startDate: undefined, // string
 	weeksPerRow: 2, // int
 	firstDayOffset: 0, // int
@@ -135,7 +145,9 @@
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<OverlapCalendar xmlns="sap.me"
-	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
 	startDate=""
 	weeksPerRow="2"
 	firstDayOffset="0"
@@ -153,7 +165,6 @@
 </Template>
 <Template name="sap.me.OverlapCalendarEvent" alias="OverlapCalendarEvent,Event">
 	<jsTemplate><![CDATA[new sap.me.OverlapCalendarEvent({
-	id: "${id}", // sap.ui.core.ID
 	startDay: undefined, // string
 	endDay: undefined, // string
 	relevant: undefined, // boolean
@@ -168,7 +179,6 @@
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<OverlapCalendarEvent xmlns="sap.me"
-	id="${id}"
 	startDay=""
 	endDay=""
 	relevant=""
@@ -184,7 +194,9 @@
 </Template>
 <Template name="sap.me.ProgressIndicator" alias="ProgressIndicator,Indicator">
 	<jsTemplate><![CDATA[new sap.me.ProgressIndicator({
-	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
 	visible: true, // boolean
 	enabled: true, // boolean
 	barColor: sap.ui.core.BarColor.NEUTRAL, // sap.ui.core.BarColor
@@ -198,7 +210,9 @@
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<ProgressIndicator xmlns="sap.me"
-	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
 	visible="true"
 	enabled="true"
 	barColor="NEUTRAL"
@@ -213,7 +227,9 @@
 </Template>
 <Template name="sap.me.TabContainer" alias="TabContainer,Container">
 	<jsTemplate><![CDATA[new sap.me.TabContainer({
-	id: "${id}", // sap.ui.core.ID
+	busy: false, // boolean
+	busyIndicatorDelay: 1000, // int
+	visible: true, // boolean
 	selectedTab: undefined, // int
 	badgeInfo: undefined, // int
 	badgeNotes: undefined, // int
@@ -241,7 +257,9 @@
 })
 ]]></jsTemplate>
 	<xmlTemplate><![CDATA[<TabContainer xmlns="sap.me"
-	id="${id}"
+	busy="false"
+	busyIndicatorDelay="1000"
+	visible="true"
 	selectedTab=""
 	badgeInfo=""
 	badgeNotes=""
